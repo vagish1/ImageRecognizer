@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    background-color: #fafafa;
+
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    width: 80%;
+    margin: auto;
+    position: relative;
+    /* align-items: center; */
+
+
+}
+
+#Webcam_file {
+
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    border-right: 16px solid transparent;
+    border-radius: 30px;
+
+}
+
+.predictions {
+    flex: 1;
+
+}
+
+nav {
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    margin-bottom: 24px;
+}
+
+.items {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    padding: 12px;
+    justify-content: space-between;
+    background-color: rgb(214, 43, 43);
+    border-radius: 10px;
+}
+
+.className {
+    color: #FFF;
+}
+
+.predictionVal {
+    color: #FFF;
+}
+
+.emptyContainer {
+    width: 100%;
+    padding: 24px;
+    background-color: #FFF;
+    margin-top: 16px;
+    border-radius: 12px;
+    border: #000 solid 2px;
+
+}
+
+.emptyContainer p {
+    font-size: 14px;
+    color: #8b8b8b;
+    margin-top: 4px;
+    font-weight: 200;
+    font-family: 'Esteban', serif;
+    letter-spacing: 0.8;
+}
+
+.webCam {
+
+    background-color: #FFF;
+    flex: 1;
+    height: 500px;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+
+.selectInfoBtn {
+    border-radius: 12px;
+    border: #000 solid 2px;
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    background-color: #dedfff;
+    padding: 24px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.selectInfoBtn p {
+    font-family: 'Esteban', serif;
+    letter-spacing: 0.8;
+}
+
+.info {
+    color: #4e50f3;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: 600;
+
+
+}
+
+.material-symbols-outlined {
+    color: #4e50f3;
+    align-self: center;
+    width: 24px;
+    height: 24px;
+
+}
+
+.res {
+    margin-top: 16px;
+}
+
+.classes {
+    overflow-y: auto;
+    max-height: 330px;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        width: 80%;
+        display: flex;
+        margin: auto;
+
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+
+    .webCam {
+        width: 100%;
+        height: 250px;
+        background-color: #FFF;
+        flex: none;
+        margin-top: 36px;
+        margin-left: 0%;
+        border-radius: 12px;
+    }
+
+
+
+}

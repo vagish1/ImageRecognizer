@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Recognizer-Recognize images fastly</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Esteban&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <script src="src/js/tensorflow.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <div class="main">
+
+        <nav>
+            <h1>Image Recognizer</h1>
+        </nav>
+
+        <div class="container">
+
+            <div class="predictions">
+
+                <select name="view" id="webcam_file" onchange="onSourceChange(event)">
+
+                    <option value="Webcam">Webcam</option>
+                    <option value="File">File</option>
+
+                </select>
+
+                <br>
+
+                <Button class="selectInfoBtn" onclick="start()">
+                    <span class="material-symbols-outlined">
+                        folder_open
+                    </span>
+                    <p class="info"> Choose images from your files, or drag & drop here</p>
+                </Button>
+
+                <h3 class="res">Result</h3>
+
+                <div class="classes">
+
+                    <div class="emptyContainer">
+                        <h3>
+                            Your result will appear here
+                        </h3>
+
+                        <p>You will see the different name's that matches the object present in the video/images, Click
+                            on button above to start recognizing different images.</p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="webCam">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+
+</body>
+
+
+</html>
